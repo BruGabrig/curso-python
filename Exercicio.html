@@ -1,0 +1,23 @@
+<script>
+var = time1, time2, gols1, gols2, placar
+
+time1 = prompt("Qual o nome do time1? ", "");
+golstime1 = parseInt (prompt("Quantos gols fez o " + time1 + "? ", ""));
+time2 = prompt("Qual o nome do time2? ","");
+golstime2 = parseInt (prompt("Quantos gols fez o " + time2 + "?", ""));
+
+
+if (golstime1 > golstime2) {
+    Resultado = "Vitória do " + time1;
+
+}else if (golstime2 > golstime1) {
+   resultado = "Vitória do " + time2;
+} else {
+resultado = "Empate";
+}
+    
+document.write(time1 + " " + golstime1 + "x" + golstime2 + "" + time2 + "</br>");
+document.write(resultado);
+</script>
+
+
