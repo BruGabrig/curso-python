@@ -10,21 +10,29 @@
 
     }
 
-    nome = prompt("Digite o nome do aluno");
+    quantidade = parseInt(prompt("Quanntos alunos?"));
     
-    do{
-        nota1 = parseFloat(prompt("Digite a primeira nota"));
+    for (i = 0; i < nota1; i++);{
+    
+        nome = prompt("Digite o nome do aluno");
+        
+        do{
+            nota1 = parseFloat(prompt("Digite a primeira nota"));
 
-        verificarErro(nota1);
-    } while (Number.isNaN(nota1));
+            verificarErro(nota1);
+        } while (Number.isNaN(nota1));
 
-    do{
-        nota2 = parseFloat(prompt("Digite a segunda nota"));
+        do{
+            nota2 = parseFloat(prompt("Digite a segunda nota"));
 
-        verificarErro(nota2);
-    } while (Number.isNaN(nota2));
+            verificarErro(nota2);
+        } while (Number.isNaN(nota2));
 
-    media = calcularMedia(nota1, nota2);
+    
 
-    document.write(exibirResultado(media));
+        media = calcularMedia(nota1, nota2);
+
+        document.write("Nome : " + nome + "-");
+        document.write(exibirResultado(media));
+}
 </script>
